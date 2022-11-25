@@ -25,3 +25,5 @@ let elementById = document.getElementById("selector");
 queryTitle.style.color = "blue";
 queryTitle.style.fontSize = "2rem";
 queryTitle.style.backgroundColor = "rgba(255,0,0,0.5)";
+
+let queryContent = document.querySelector("#contentId");
