@@ -9,9 +9,11 @@
 
 // from data.go.kr with loan rate
 let rate_list = document.querySelector("#rent-loan-rate-info_rate-list");
+let numbers = 1
 rate_list.addEventListener('click', async (event) => {
     let url = `https://apis.data.go.kr/B551408/rent-loan-rate-info/rate-list?serviceKey=BoygPZjC27pxm92hSposjnSob2u36vziS1rzIzxkrL9QxmlhB0SMARwLfNlBE3wrE7nnw34zLmmv0a6amvW4xg%3D%3D&pageNo=1&numOfRows=30&dataType=JSON` ;
     let options = {}; // python dict 유사
+    numbers = numbers + 1;
     try {
         let response = await fetch(url, options);   // send
 
