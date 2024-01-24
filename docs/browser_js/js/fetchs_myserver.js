@@ -1,4 +1,4 @@
-// from data.go.kr with loan rate
+// https://github.com/yojulab/learn_fastapis/blob/main/routes/events_api.py
 let rate_list = document.querySelector("#retrieve_all_events");
 rate_list.addEventListener('click', async (event) => {
     let url = `http://127.0.0.1:8000/events_api/` ;
